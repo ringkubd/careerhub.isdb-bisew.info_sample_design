@@ -3466,46 +3466,46 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand" href="#home">
+            <a class="navbar-brand" href="#home" aria-label="CareerHub Home">
                 <img src="https://www.isdb-bisew.org/img/isdb-bisew.png" alt="IsDB-BISEW Logo" class="logo-img me-2">
                 <span class="brand-text">
                     <strong>CareerHub</strong>
                     <small class="d-block text-muted">IsDB-BISEW IT Recruitment</small>
                 </span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
+                <ul class="navbar-nav ms-auto" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a class="nav-link active" href="#home" role="menuitem" aria-current="page">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#about" role="menuitem">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#services" role="menuitem">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#advantages">Why Choose Us</a>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#advantages" role="menuitem">Why Choose Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#success-stories">Success Stories</a>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#success-stories" role="menuitem">Success Stories</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#recruitment-partners">Partners</a>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#recruitment-partners" role="menuitem">Partners</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#contact" role="menuitem">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" role="menuitem" aria-label="Open login form">Login</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary ms-2" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+                    <li class="nav-item" role="none">
+                        <a class="btn btn-primary ms-2" href="#" data-bs-toggle="modal" data-bs-target="#registerModal" role="menuitem" aria-label="Open registration form">Register</a>
                     </li>
                 </ul>
             </div>
@@ -3543,8 +3543,8 @@
                                 Remember me
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-sign-in-alt me-2"></i>Login
+                        <button type="submit" class="btn btn-primary" aria-label="Login to your account">
+                            <i class="fas fa-sign-in-alt me-2" aria-hidden="true"></i>Login
                         </button>
                         <div class="text-center">
                             <a href="#" class="text-muted">Forgot your password?</a>
@@ -3691,7 +3691,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" role="banner" aria-label="Welcome to CareerHub">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8 hero-content">
@@ -3749,7 +3749,7 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="stats">
+    <section class="stats" role="region" aria-label="CareerHub Statistics">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-6 mb-4">
@@ -3785,11 +3785,11 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section about">
+    <section id="about" class="section about" role="region" aria-labelledby="about-title">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="section-title fade-in">About CareerHub & IsDB-BISEW</h2>
+                    <h2 id="about-title" class="section-title fade-in">About CareerHub & IsDB-BISEW</h2>
                     <p class="section-subtitle fade-in">Connecting Bangladesh's brightest IT minds with leading employers through excellence in education and global opportunity</p>
                 </div>
             </div>
@@ -4606,7 +4606,7 @@
                                         <a href="mailto:careerhub@isdb-bisew.org" class="contact-link-primary">
                                             careerhub@isdb-bisew.org
                                         </a>
-                                        <span class="availability">Response</span>
+                                        <span class="availability">Response within 24 hours</span>
                                     </div>
                                 </div>
 
@@ -4663,7 +4663,7 @@
                                     <div class="feature-icon">
                                         <i class="fas fa-clock"></i>
                                     </div>
-                                    
+                                    <h6>24/7 Support</h6>
                                     <p>Round-the-clock assistance for your queries</p>
                                 </div>
                             </div>
