@@ -1732,6 +1732,155 @@
             line-height: 1.6;
         }
 
+        /* Success Stories Section */
+        .success-stories {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .success-stories::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="success-pattern" patternUnits="userSpaceOnUse" width="50" height="50"><circle cx="25" cy="25" r="2" fill="rgba(76,175,80,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23success-pattern)"/></svg>');
+            pointer-events: none;
+        }
+
+        .success-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            height: 100%;
+            position: relative;
+            border: 1px solid #e9ecef;
+        }
+
+        .success-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .success-image {
+            position: relative;
+            overflow: hidden;
+            height: 200px;
+        }
+
+        .success-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .success-card:hover .success-image img {
+            transform: scale(1.05);
+        }
+
+        .success-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(27, 94, 32, 0.3);
+        }
+
+        .success-content {
+            padding: 25px;
+        }
+
+        .success-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .success-position {
+            font-size: 1rem;
+            color: var(--primary-green);
+            font-weight: 600;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .success-story {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .success-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .course-tag {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .placement-date {
+            color: #64748b;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .success-stats {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e9ecef;
+        }
+
+        .success-stats .stat-item {
+            padding: 20px;
+        }
+
+        .success-stats .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .success-stats .stat-label {
+            color: #64748b;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
         /* Contact Section */
         .contact {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -3344,6 +3493,9 @@
                         <a class="nav-link" href="#advantages">Why Choose Us</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#success-stories">Success Stories</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#recruitment-partners">Partners</a>
                     </li>
                     <li class="nav-item">
@@ -3517,6 +3669,10 @@
                 <a href="#services" class="bottom-nav-item">
                     <i class="fas fa-cogs"></i>
                     <span>Courses</span>
+                </a>
+                <a href="#success-stories" class="bottom-nav-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>Success</span>
                 </a>
                 <a href="#recruitment-partners" class="bottom-nav-item">
                     <i class="fas fa-handshake"></i>
@@ -3925,6 +4081,179 @@
                         <div class="advantage-content">
                             <h5>Dedicated Placement Support</h5>
                             <p>Personal assistance from IsDB-BISEW's expert Placement Cell. Get guidance throughout the entire recruitment journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="success-stories" class="section success-stories">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title fade-in">Our Success Stories</h2>
+                    <p class="section-subtitle fade-in">Meet our graduates who have transformed their careers through our comprehensive IT training programs</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Success Story 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="success-card fade-in">
+                        <div class="success-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=250&fit=crop&crop=face" alt="Ahmed Rahman - Software Engineer" class="img-fluid">
+                            <div class="success-badge">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                        </div>
+                        <div class="success-content">
+                            <h5 class="success-name">Ahmed Rahman</h5>
+                            <p class="success-position">Software Engineer at Tech Solutions Ltd.</p>
+                            <p class="success-story">"The training at IsDB-BISEW completely changed my career path. From having no programming experience to landing a job at a top tech company in just 6 months!"</p>
+                            <div class="success-details">
+                                <span class="course-tag">Web Development</span>
+                                <span class="placement-date">Placed: March 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Story 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="success-card fade-in">
+                        <div class="success-image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=250&fit=crop&crop=face" alt="Fatima Khan - Data Analyst" class="img-fluid">
+                            <div class="success-badge">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="success-content">
+                            <h5 class="success-name">Fatima Khan</h5>
+                            <p class="success-position">Data Analyst at DataTech Bangladesh</p>
+                            <p class="success-story">"The Data Science course was exceptional. The hands-on projects and real-world applications prepared me perfectly for my current role. Highly recommended!"</p>
+                            <div class="success-details">
+                                <span class="course-tag">Data Science</span>
+                                <span class="placement-date">Placed: January 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Story 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="success-card fade-in">
+                        <div class="success-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=250&fit=crop&crop=face" alt="Mohammad Ali - Cybersecurity Specialist" class="img-fluid">
+                            <div class="success-badge">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="success-content">
+                            <h5 class="success-name">Mohammad Ali</h5>
+                            <p class="success-position">Cybersecurity Specialist at SecureNet</p>
+                            <p class="success-story">"The cybersecurity training was comprehensive and industry-relevant. I now work with one of Bangladesh's leading security firms, protecting critical infrastructure."</p>
+                            <div class="success-details">
+                                <span class="course-tag">Cybersecurity</span>
+                                <span class="placement-date">Placed: February 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Story 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="success-card fade-in">
+                        <div class="success-image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=250&fit=crop&crop=face" alt="Nusrat Jahan - Mobile App Developer" class="img-fluid">
+                            <div class="success-badge">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <div class="success-content">
+                            <h5 class="success-name">Nusrat Jahan</h5>
+                            <p class="success-position">Mobile App Developer at AppStudio</p>
+                            <p class="success-story">"From zero to hero! The mobile app development course gave me all the skills I needed. Now I'm building apps for clients and loving every moment of it."</p>
+                            <div class="success-details">
+                                <span class="course-tag">Mobile Development</span>
+                                <span class="placement-date">Placed: April 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Story 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="success-card fade-in">
+                        <div class="success-image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=250&fit=crop&crop=face" alt="Sakib Hasan - Cloud Engineer" class="img-fluid">
+                            <div class="success-badge">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                        </div>
+                        <div class="success-content">
+                            <h5 class="success-name">Sakib Hasan</h5>
+                            <p class="success-position">Cloud Engineer at CloudTech Solutions</p>
+                            <p class="success-story">"The cloud computing certification opened doors I never knew existed. AWS, Azure, and GCP knowledge got me my dream job with excellent compensation."</p>
+                            <div class="success-details">
+                                <span class="course-tag">Cloud Computing</span>
+                                <span class="placement-date">Placed: May 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Story 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="success-card fade-in">
+                        <div class="success-image">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=250&fit=crop&crop=face" alt="Rina Akter - Full Stack Developer" class="img-fluid">
+                            <div class="success-badge">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="success-content">
+                            <h5 class="success-name">Rina Akter</h5>
+                            <p class="success-position">Full Stack Developer at WebCraft</p>
+                            <p class="success-story">"The full-stack development course was exactly what I needed. The instructors were amazing, and the project-based learning approach really helped me grasp concepts."</p>
+                            <div class="success-details">
+                                <span class="course-tag">Full Stack Development</span>
+                                <span class="placement-date">Placed: June 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Stats -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="success-stats">
+                        <div class="row text-center g-4">
+                            <div class="col-md-3">
+                                <div class="stat-item">
+                                    <div class="stat-number" data-count="95">0%</div>
+                                    <div class="stat-label">Placement Rate</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="stat-item">
+                                    <div class="stat-number" data-count="500">0+</div>
+                                    <div class="stat-label">Successful Graduates</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="stat-item">
+                                    <div class="stat-number" data-count="100">0+</div>
+                                    <div class="stat-label">Partner Companies</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="stat-item">
+                                    <div class="stat-number" data-count="6">0</div>
+                                    <div class="stat-label">Avg. Months to Job</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -4414,6 +4743,7 @@
                                 <li><a href="#about">About Us</a></li>
                                 <li><a href="#services">IT Training</a></li>
                                 <li><a href="#advantages">Why Choose Us</a></li>
+                                <li><a href="#success-stories">Success Stories</a></li>
                                 <li><a href="#recruitment-partners">Partners</a></li>
                                 <li><a href="#contact">Contact</a></li>
                                 <li><a href="https://isdb-bisew.org/" target="_blank">IsDB-BISEW</a></li>
